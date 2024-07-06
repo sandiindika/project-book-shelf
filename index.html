@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Library</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Book Library</h1>
+        </header>
+        <section class="form-section">
+            <h2>Add a Book</h2>
+            <form id="bookForm">
+                <div class="input-group">
+                    <input type="text" id="bookTitle" required>
+                    <label for="bookTitle">Title</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="bookAuthor" required>
+                    <label for="bookAuthor">Author</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="bookYear" required>
+                    <label for="bookYear">Year</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="bookCompleted">
+                    <label for="bookCompleted">Completed</label>
+                </div>
+                <button type="submit" class="btn">Add Book</button>
+            </form>
+        </section>
+        <section class="search-section">
+            <h2>Find a Book</h2>
+            <form id="searchForm">
+                <div class="input-group">
+                    <input type="text" id="searchQuery" required>
+                    <label for="searchQuery">Search</label>
+                </div>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </section>
+        <section class="book-lists">
+            <div class="list unread">
+                <h2>Unread Books</h2>
+                <div id="unreadBooks"></div>
+            </div>
+            <div class="list read">
+                <h2>Read Books</h2>
+                <div id="readBooks"></div>
+            </div>
+        </section>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
